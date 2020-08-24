@@ -1,5 +1,5 @@
 import React from "react"
-import { Link } from "gatsby"
+import AniLink from 'gatsby-plugin-transition-link/AniLink';
 
 import classes from "../css/footer.module.css"
 import links from "../Constants/links"
@@ -10,10 +10,10 @@ const Footer = () => {
     <footer className={classes.footer}>
       <div className={classes.links}>
         {links.map((i, ind) => {
-          return <Link
+          return <AniLink
             key={ind}
             to={i.path}
-          >{i.text}</Link>
+          >{i.text}</AniLink>
         })}
       </div>
 

@@ -1,5 +1,5 @@
 import React from "react"
-import { Link } from "gatsby"
+import AniLink from 'gatsby-plugin-transition-link/AniLink';
 
 import Layout from "../components/Layout"
 import classes from "../css/error.module.css"
@@ -11,9 +11,9 @@ export default function error() {
       <Banner
         title="oops it's a dead end"
       >
-        <Link to={"/"} className={"btn-white"}>
+        <AniLink to={"/"} className={"btn-white"}>
           Back to home page
-        </Link>
+        </AniLink>
       </Banner>
     </header>
   </Layout>
