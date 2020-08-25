@@ -26,6 +26,7 @@ module.exports = {
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-transition-link`,
+    `gatsby-plugin-playground`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {

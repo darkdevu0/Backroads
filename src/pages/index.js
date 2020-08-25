@@ -8,6 +8,7 @@ import Banner from "../components/Banner"
 import About from "../components/Home/About"
 import Services from "../components/Home/Services"
 import StyledHero from "../components/StyledHero"
+import FeaturedTours from "../components/Home/FeaturedTours"
 
 setConfig({
   showReactDomPatchNotification: false
@@ -27,16 +28,14 @@ const Home = (props) => {
           </Link>
         </Banner>
       </StyledHero>
-
       <About/>
-
       <Services/>
-
-    </Layout>
+      <FeaturedTours/>
+      </Layout>
   )
 }
 
-export const query =  graphql`
+export const query = graphql`
   query {
   fluid: file(relativePath: {eq: "defaultBcg.jpeg"}) {
     childImageSharp {
@@ -48,4 +47,4 @@ export const query =  graphql`
 }
 `
 
-export default Home;
+export default Home
