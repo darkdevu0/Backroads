@@ -7,9 +7,10 @@ const Contact2 = () => {
 
   return (
     <section className={classes.contact}>
+      
       <Title title={"contact"} subtitle={"us"}/>
       <div className={classes.center}>
-        <form action="https://formspree.io/xwkrjyvo" method="POST">
+        <form name="contact" method="POST" data-netlify="true">
           <div>
             <input
               type="text"
