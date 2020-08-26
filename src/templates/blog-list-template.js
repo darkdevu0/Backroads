@@ -20,11 +20,13 @@ const Blog = (props) => {
           ))}
         </div>
         <section className={classes.links}>
+          {currentPage !== 1  ? <AniLink fade to={`/blogs/${currentPage - 1 === 1 ? '' : currentPage - 1}`} className={classes.link}>Prev</AniLink> : null}
           {Array.from({length: numPages}, (_, i) => {
             return (
-              <AniLink fade to={`/blogs/${i !== 0 ? i+1: ''}`} className={classes.link}>{i+1}</AniLink>
+              <AniLink fade to={`/blogs/${i !== 0 ? i+1: ''}`} className={i === currentPage - 1 ? `${classes.active} ${classes.link}` : classes.link}>{i+1}</AniLink>
             )
           })}
+          {currentPage  !== numPages  ? <AniLink fade to={`/blogs/${currentPage !== 0 ? currentPage+1: ''}`} className={classes.link}>Next</AniLink> : null}
         </section>
       </section>
     </Layout>
