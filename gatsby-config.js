@@ -5,7 +5,7 @@
  */
 
 require("dotenv").config({
-  path: `.env.${process.env.NODE_ENV}`,
+  path: `.env.${process.env.NODE_ENV}`
 })
 
 module.exports = {
@@ -15,8 +15,10 @@ module.exports = {
     description: "Explore awesome tours and discover " +
       "what make each of them unique and say yes to adventure",
     author: "@darkdevu0",
+    image: "/defaultBcg.jpeg",
+    siteUrl: "https://devashishshukla.netlify.app",
     data: {
-      name: "devu",
+      name: "Devashish",
       age: 20
     }
   },
@@ -27,6 +29,17 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-transition-link`,
     `gatsby-plugin-playground`,
+    `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-sitemap`,
+    `gatsby-plugin-offline`,
+    {
+      resolve: "gatsby-plugin-robots-txt",
+      options: {
+        host: "https://devashishshukla.netlify.app",
+        sitemap: "https://devashishshukla.netlify.app/sitemap.xml",
+        policy: [{ userAgent: "*", allow: "/" }]
+      }
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -37,10 +50,10 @@ module.exports = {
     {
       resolve: `gatsby-source-contentful`,
       options: {
-        spaceId: process.env.CONTENTFUL_ID,
+        spaceId: "aa6lmvvj10ja",
         // Learn about environment variables: https://gatsby.dev/env-vars
-        accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
-      },
+        accessToken: "coEg-s-TeNE4MIZnenmUau8zdPNpZZQc5LqeJ9dW6qU"
+      }
     }
   ]
 }

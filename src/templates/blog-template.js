@@ -5,6 +5,7 @@ import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
 import Layout from "../components/Layout/Layout"
 import classes from "../css/single-blog.module.css"
 import AniLink from "gatsby-plugin-transition-link/AniLink"
+import SEO from "../components/SEO"
 
 const Blog = ({ data }) => {
   const {
@@ -31,6 +32,7 @@ const Blog = ({ data }) => {
 
   return (
     <Layout>
+      <SEO title={"Post"} />
       <section className={classes.blog}>
         <div className={classes.center}>
           <h1>{title}</h1>

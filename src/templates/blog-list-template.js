@@ -6,12 +6,14 @@ import AniLink from "gatsby-plugin-transition-link/AniLink"
 import classes from "../css/blog.module.css"
 import BlogCard from "../components/Blog/BlogCard"
 import Title from "../components/Title"
+import SEO from "../components/SEO"
 
 const Blog = (props) => {
   const { currentPage, numPages } = props.pageContext;
   const { posts: edges } = props.data;
   return (
     <Layout>
+      <SEO title={"Blog"} />
       <section className={classes.blog}>
         <Title title={"latest"} subtitle={"posts"}/>
         <div className={classes.center}>

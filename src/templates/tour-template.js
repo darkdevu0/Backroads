@@ -9,6 +9,8 @@ import Layout from "../components/Layout/Layout"
 import classes from "../css/template.module.css"
 import Day from "../components/SingleTour/Day"
 import Button from "../examples/Button"
+import SEO from "../components/SEO"
+
 
 export const query = graphql`
     query($slug: String!) {
@@ -50,6 +52,7 @@ const Template = ({ data: { tour } }) => {
 
   return (
     <Layout>
+      <SEO title={"Tour"} />
       <StyledHero img={mainImage.fluid}/>
       <section className={classes.template}>
         <div className={classes.center}>
