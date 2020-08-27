@@ -3,7 +3,7 @@ import { Link } from "gatsby"
 import { setConfig } from "react-hot-loader"
 import { graphql } from "gatsby"
 
-import Layout from "../components/Layout"
+import Layout from "../components/Layout/Layout"
 import Banner from "../components/Banner"
 import About from "../components/Home/About"
 import Services from "../components/Home/Services"

@@ -1,7 +1,7 @@
 import React from "react"
 import { graphql } from "gatsby"
 
-import Layout from "../components/Layout"
+import Layout from "../components/Layout/Layout"
 import AniLink from "gatsby-plugin-transition-link/AniLink"
 import classes from "../css/blog.module.css"
 import BlogCard from "../components/Blog/BlogCard"

@@ -2,7 +2,7 @@ import React from "react"
 import { graphql } from "gatsby"
 
 import StyledHero from "../components/StyledHero"
-import Layout from "../components/Layout"
+import Layout from "../components/Layout/Layout"
 import Tours from "../components/Tours/Tours"
 
 const Component = (props) => {

@@ -5,7 +5,7 @@ import Img from "gatsby-image"
 import { FaMoneyBillWave, FaMap } from "react-icons/all"
 import AniLink from 'gatsby-plugin-transition-link/AniLink'
 import StyledHero from "../components/StyledHero"
-import Layout from "../components/Layout"
+import Layout from "../components/Layout/Layout"
 import classes from "../css/template.module.css"
 import Day from "../components/SingleTour/Day"
 import Button from "../examples/Button"

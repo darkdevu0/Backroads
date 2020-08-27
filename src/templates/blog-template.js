@@ -2,7 +2,7 @@ import React from "react"
 import { graphql } from "gatsby"
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
 
-import Layout from "../components/layout"
+import Layout from "../components/Layout/Layout"
 import classes from "../css/single-blog.module.css"
 import AniLink from "gatsby-plugin-transition-link/AniLink"
 
